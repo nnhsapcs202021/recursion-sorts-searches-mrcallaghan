@@ -47,12 +47,12 @@ public class PalindromeTester
    
    public static boolean isPalindrome(String str)
    {
+    
        // must have a terminating case
-       
        if (str.length() <= 1)
        {
            return true;
-       }
+        }
        
        // solve a small part of the problem
        String firstChar = str.substring(0,1);
@@ -60,15 +60,13 @@ public class PalindromeTester
        if (firstChar.equals(lastChar))
        {
            // recurse with a simpler version of the problem
-           return isPalindrome(str.substring(1, str.length()-1));
+           return isPalindrome(str.substring(1, str.length() - 1));
         }
-       else
-       {
-           return false;
+        
+        else
+        {
+            return false;
         }
        
-       
-       
-    
     }
 }

@@ -29,7 +29,8 @@ public class SelectionSorter
       int minPos = from;
       for (int i = from + 1; i < a.length; i++)
       {
-         if (a[i] < a[minPos]) { minPos = i; }
+         if (a[i] < a[minPos]) 
+            { minPos = i; }
       }
       return minPos;
    }
